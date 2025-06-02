@@ -1,0 +1,8 @@
+I’m building a social platform with the following requirements:
+Millions of users;
+Need to store user profiles, user-generated posts, and user-to-user connections;
+High data read speed is critical;
+80% of operations are reads, 20% are writes;
+The system must scale effectively as the user base grows.
+
+Apply Chain-of-Thought reasoning to analyze these requirements step by step. Based on that analysis, identify the most suitable type of database (e.g., relational, document, graph, key-value, etc.) for this project. Your reasoning should be structured and well-justified, clearly explaining how each database type fits or fails to meet the requirements, and why the final choice is the most appropriate.
