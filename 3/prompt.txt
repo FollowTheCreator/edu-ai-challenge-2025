@@ -1,0 +1,22 @@
+You will be provided with a raw text document. Your tasks are as follows:
+
+Summarization: Generate a concise summary of the text. Capture the core message, key facts, and main points. Use a mix of extractive and abstractive summarization techniques as appropriate.
+
+Sentiment Analysis: Identify the overall sentiment of the text as Positive, Neutral, or Negative. Assign a sentiment score ranging from -1 (very negative) to +1 (very positive), allowing for decimal values (e.g., -0.5, 0.2).
+
+Output Format: Present the results in a clean, structured JSON format with the following fields (add any relevant fields to the metadata property you deem useful):
+
+json
+{
+  "summary": "string, the concise summary of the text",
+  "sentiment": "Positive | Neutral | Negative",
+  "sentiment_score": "number between -1 and 1",
+  "metadata": {
+    "original_word_count": number,
+    "summary_word_count": number,
+    "compression_percentage": number
+    "date_processed": "YYYY-MM-DD"
+  }
+}
+
+I attached the task_3_input.docx file. Extract and process the contents accordingly.

@@ -1,0 +1,17 @@
+Here is the processed output based on the contents of `task_3_input.docx`:
+
+```json
+{
+  "summary": "The document outlines the rise of remote work, particularly post-pandemic, emphasizing its benefits such as improved job satisfaction, better work-life balance, and cost savings for companies. It also acknowledges challenges like employee isolation, reduced collaboration, and productivity issues. Despite these concerns, remote work is expected to persist, with hybrid models and advancing technologies facilitating effective remote collaboration.",
+  "sentiment": "Positive",
+  "sentiment_score": 0.3,
+  "metadata": {
+    "original_word_count": 237,
+    "summary_word_count": 60,
+    "compression_percentage": 74.68,
+    "date_processed": "2025-06-04"
+  }
+}
+```
+
+Let me know if you'd like this adapted into another format (e.g. CSV, PDF) or if you want to batch-process multiple files.
