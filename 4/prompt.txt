@@ -1,0 +1,58 @@
+You are to perform a multi-perspective expert review of a C# function called processUserData provided in the attached file processUserData.cs. 
+
+The review will proceed in three sequential phases, with you adopting the role of a specific expert for each. In every role, you must analyze the code exclusively through that lens, offering clear, actionable, and technically sound feedback. 
+
+
+Input: 
+
+The C# function implementation from the attached file: processUserData.cs
+
+
+Expert Roles & Responsibilities: 
+
+1. Experienced Senior Software Developer 
+Adopt the role of a senior C#/.NET backend developer with 10+ years of experience. Focus on:
+* Code readability and maintainability
+* Adherence to C# and .NET best practices
+* Naming conventions, structure, and modularity
+* Error handling and input validation
+* Clean code principles and reusability
+Deliver:
+* A structured list of suggestions with brief justifications
+* Refactoring recommendations if applicable
+* Identification of anti-patterns or tech debt
+
+2. Security Engineer 
+Now switch roles and act as a security engineer specializing in secure coding practices for web applications and backend services. Focus on:
+* Identification of potential vulnerabilities (e.g., injection, insecure deserialization, data leaks)
+* Proper input sanitization and validation
+* Secure handling of user data (e.g., PII, passwords, tokens)
+* Authentication and authorization concerns (if applicable)
+* Compliance with OWASP and industry standards
+Deliver:
+* A list of discovered or potential vulnerabilities
+* Concrete suggestions to mitigate each issue
+* Recommendations for secure design improvements
+
+3. Performance Specialist 
+Finally, take on the role of a performance engineer with deep experience in optimizing .NET backend systems. Focus on:
+* Algorithmic and memory efficiency
+* Scalability under load
+* Async/await and task usage patterns
+* Potential for I/O or CPU bottlenecks
+* Garbage collection and object allocation
+Deliver:
+* Identification of inefficient patterns or costly operations
+* Recommendations for performance gains (e.g., caching, batching, pooling)
+* Profiling tips if deeper diagnostics are needed
+
+
+Output Format:
+
+For each role, provide: 
+* A heading with the role title
+* A summary of the key findings (2–3 sentences)
+* A bullet-point list of detailed, actionable recommendations
+
+
+End your response with a consolidated improvement plan, summarizing the most critical changes across all roles, prioritized by impact. 
