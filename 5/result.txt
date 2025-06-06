@@ -1,0 +1,64 @@
+Here is the JSON output for the two samples:
+
+### Sample 1
+
+> "Sensor just stops tracking for like a half second kinda often even at 8000hz. I've also tried it plugged in and still the same problem. First one I got, I had to return also because the dongle just didn't work, \$150 mouse btw"
+
+```json
+{
+  "sentiment": "Negative",
+  "isRelevant": true,
+  "mainSubject": "Mouse tracking and connectivity reliability",
+  "positives": [],
+  "painPoints": [
+    "Sensor intermittently stops tracking",
+    "Issue persists even when plugged in",
+    "Initial unit had a non-functional dongle",
+    "High price despite performance issues"
+  ],
+  "improvementSuggestions": [
+    "Improve sensor tracking stability",
+    "Ensure dongle reliability before shipping",
+    "Match performance with premium pricing"
+  ],
+  "featuresMentioned": [
+    "Sensor",
+    "Tracking",
+    "Dongle",
+    "Wired mode",
+    "Polling rate (8000hz)"
+  ],
+  "userExpertise": "Experienced"
+}
+```
+
+---
+
+### Sample 2
+
+> "Is it worth it? It is a product with no flaws in my opinion, if you love it, go for it, but it's not worth the price since you'll be able to perform the same with a cheaper product with half the specs."
+
+```json
+{
+  "sentiment": "Mixed",
+  "isRelevant": true,
+  "mainSubject": "Product value vs performance",
+  "positives": [
+    "No flaws in functionality",
+    "Performs well"
+  ],
+  "painPoints": [
+    "Price is too high for what it offers",
+    "Comparable performance available at lower cost"
+  ],
+  "improvementSuggestions": [
+    "Reduce price to match value proposition"
+  ],
+  "featuresMentioned": [
+    "Performance",
+    "Specs",
+    "Price"
+  ],
+  "userExpertise": "Experienced"
+}
+```

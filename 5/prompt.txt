@@ -1,0 +1,38 @@
+You are an expert AI product analyst trained to extract structured insight from real user feedback. Your task is to analyze product-related comments and output insights in a clean JSON format. Follow these guidelines carefully:
+
+Reasoning Process:
+1. Check Relevance: If the feedback does not discuss a product or its experience, set "isRelevant": false and skip all other fields. Use the Chain-of-Thought Reasoning technique.
+
+2. Analyze Sentiment: Determine the overall tone — Positive, Negative, Neutral, or Mixed.
+
+3. Extract Key Elements:
+
+* mainSubject: What is the user talking about? E.g., mouse, software, app.
+* positives: Aspects the user liked.
+* painPoints: Issues or frustrations mentioned.
+* improvementSuggestions: Any suggested fixes or requests (explicit or implicit).
+* featuresMentioned: Specific features (e.g., tracking, dongle, design).
+* userExpertise: Judged from technical language or comparative analysis: Experienced, Novice, Unknown.
+
+Learning from Examples:
+Refer to the attached task_5_input.docx file containing three examples of properly analyzed product feedback. Learn the expected reasoning process and output structure from these examples.
+
+Analyze the following samples and produce JSON output accordingly:
+Sample 1:
+"Sensor just stops tracking for like a half second kinda often even at 8000hz. I've also tried it plugged in and still the same problem. First one I got, I had to return also because the dongle just didn't work, $150 mouse btw"
+
+Sample 2:
+"Is it worth it? It is a product with no flaws in my opinion, if you love it, go for it, but it's not worth the price since you'll be able to perform the same with a cheaper product with half the specs."
+
+Format your answer in the following JSON format for each sample:
+json
+{
+  "sentiment": "Positive | Negative | Neutral | Mixed",
+  "isRelevant": true | false,
+  "mainSubject": "string or null",
+  "positives": ["string", ...],
+  "painPoints": ["string", ...],
+  "improvementSuggestions": ["string", ...],
+  "featuresMentioned": ["string", ...],
+  "userExpertise": "Experienced | Novice | Unknown"
+}
