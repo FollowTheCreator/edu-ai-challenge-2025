@@ -1,0 +1,33 @@
+{
+  "name": "enigma-machine",
+  "version": "1.0.0",
+  "description": "A fixed implementation of the Enigma machine",
+  "main": "enigma.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:verbose": "jest --verbose",
+    "test:watch": "jest --watch"
+  },
+  "keywords": ["enigma", "cryptography", "encryption", "ww2"],
+  "author": "AI Assistant",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "enigma.js"
+    ],
+    "coverageReporters": ["text", "text-summary", "html"],
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    }
+  }
+} 

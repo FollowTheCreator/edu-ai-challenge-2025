@@ -57,14 +57,21 @@ class Enigma {
     this.plugboardPairs = plugboardPairs;
   }
   stepRotors() {
-    if (this.rotors[2].atNotch()) this.rotors[1].step();
-    if (this.rotors[1].atNotch()) this.rotors[0].step();
+    if (this.rotors[1].atNotch()) {
+      this.rotors[0].step();
+      this.rotors[1].step();
+    }
+    if (this.rotors[2].atNotch()) {
+      this.rotors[1].step();
+    }
     this.rotors[2].step();
   }
   encryptChar(c) {
     if (!alphabet.includes(c)) return c;
     this.stepRotors();
+    
     c = plugboardSwap(c, this.plugboardPairs);
+    
     for (let i = this.rotors.length - 1; i >= 0; i--) {
       c = this.rotors[i].forward(c);
     }
@@ -74,6 +81,8 @@ class Enigma {
     for (let i = 0; i < this.rotors.length; i++) {
       c = this.rotors[i].backward(c);
     }
+
+    c = plugboardSwap(c, this.plugboardPairs);
 
     return c;
   }
@@ -121,3 +130,15 @@ function promptEnigma() {
 if (require.main === module) {
   promptEnigma();
 }
+
+// Export for testing
+module.exports = {
+  Enigma,
+  Rotor,
+  plugboardSwap,
+  ROTORS,
+  REFLECTOR,
+  alphabet,
+  mod,
+  promptEnigma
+}; 
