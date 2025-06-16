@@ -1,29 +1,8 @@
-// Schema Builder
-class Schema {
-  static string(): StringValidator {
-    return new StringValidator();
-  }
-  
-  static number(): NumberValidator {
-    return new NumberValidator();
-  }
-  
-  static boolean(): BooleanValidator {
-    return new BooleanValidator();
-  }
-  
-  static date(): DateValidator {
-    return new DateValidator();
-  }
-  
-  static object<T>(schema: Record<string, Validator<any>>): ObjectValidator<T> {
-    return new ObjectValidator<T>(schema);
-  }
-  
-  static array<T>(itemValidator: Validator<T>): ArrayValidator<T> {
-    return new ArrayValidator<T>(itemValidator);
-  }
-}
+// This file has been replaced by the complete validation library in index.js
+// Please use the main library instead:
+const { Schema } = require('./index');
+
+// Example usage (same as the original template, but working):
 
 // Define a complex schema
 const addressSchema = Schema.object({
