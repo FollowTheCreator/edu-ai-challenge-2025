@@ -1,0 +1,52 @@
+{
+  "name": "sea-battle-modernized",
+  "version": "1.0.0",
+  "description": "Modernized Sea Battle (Battleship) CLI game",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+    "test:watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch"
+  },
+  "keywords": [
+    "battleship",
+    "sea-battle",
+    "game",
+    "cli"
+  ],
+  "author": "Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "@jest/globals": "^29.7.0",
+    "cross-env": "^7.0.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "globals": {
+      "jest": {
+        "useESM": true
+      }
+    },
+    "transform": {},
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js",
+      "!src/GameRenderer.js"
+    ],
+    "coverageReporters": [
+      "text",
+      "text-summary"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 60,
+        "functions": 60,
+        "lines": 60,
+        "statements": 60
+      }
+    }
+  }
+}
