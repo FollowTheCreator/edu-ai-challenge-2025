@@ -246,11 +246,17 @@ const membershipSchema = Schema.object({
 ### Running Tests
 
 ```bash
-# Run all tests
+# Run comprehensive tests
 npm test
 
-# Run with coverage report
+# Run simple test suite
+npm run test:simple
+
+# Run tests with detailed coverage report (console output)
 npm run test:coverage
+
+# Generate test report file
+npm run test:report
 
 # Run examples
 npm run example

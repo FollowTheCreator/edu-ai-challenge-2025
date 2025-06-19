@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "node test/validation.test.js",
+    "test:simple": "node simple-test.js",
     "example": "node example.js",
-    "test:coverage": "node --experimental-loader=./coverage-loader.js test/validation.test.js > test_report.txt 2>&1 && cat test_report.txt",
+    "test:coverage": "node generate-report.js",
+    "test:report": "node generate-report.js > test_report.txt 2>&1 && echo 'Test report generated: test_report.txt'",
     "start": "node example.js"
   },
   "keywords": [
