@@ -1,0 +1,26 @@
+{
+  "word_count": 262,
+  "speaking_speed_wpm": 104.6,
+  "frequently_mentioned_topics": [
+    {
+      "topic": "software development technologies",
+      "mentions": 9
+    },
+    {
+      "topic": "analytics projects",
+      "mentions": 5
+    },
+    {
+      "topic": "databases and data management",
+      "mentions": 7
+    },
+    {
+      "topic": "project architecture and design",
+      "mentions": 4
+    },
+    {
+      "topic": "clinical trials project",
+      "mentions": 3
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "audio-transcription-tool",
+  "version": "1.0.0",
+  "description": "A lightweight tool that transcribes audio, summarizes content, and extracts insights using OpenAI's Whisper and GPT models",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node index.js files/CAR0004.mp3"
+  },
+  "keywords": [
+    "audio",
+    "transcription", 
+    "whisper",
+    "openai",
+    "gpt",
+    "summary",
+    "analytics"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "openai": "^4.28.0",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 

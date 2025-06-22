@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-06-22T15:23:02.971Z",
+  "input_file": "Lil Peep - Text Me.mp3",
+  "input_file_path": "files/Lil Peep - Text Me.mp3",
+  "language": "english",
+  "duration_seconds": 145.0800018310547,
+  "model_used": "gpt-4.1-mini",
+  "word_count": 180,
+  "speaking_speed_wpm": 74.5,
+  "processing_completed": true
+}

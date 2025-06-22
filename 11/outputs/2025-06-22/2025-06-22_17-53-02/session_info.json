@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-06-22T14:53:02.758Z",
+  "input_file": "CAR0004.mp3",
+  "input_file_path": "files/CAR0004.mp3",
+  "language": "english",
+  "duration_seconds": 448.2900085449219,
+  "model_used": "gpt-4.1-mini",
+  "word_count": 1024,
+  "speaking_speed_wpm": 137,
+  "processing_completed": true
+}

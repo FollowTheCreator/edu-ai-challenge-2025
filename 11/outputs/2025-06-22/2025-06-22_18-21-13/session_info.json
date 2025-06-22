@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-06-22T15:21:13.622Z",
+  "input_file": "video_2025-06-22_18-19-55.mp4",
+  "input_file_path": "files/video_2025-06-22_18-19-55.mp4",
+  "language": "english",
+  "duration_seconds": 150.47999572753906,
+  "model_used": "gpt-4.1-mini",
+  "word_count": 262,
+  "speaking_speed_wpm": 104.6,
+  "processing_completed": true
+}
