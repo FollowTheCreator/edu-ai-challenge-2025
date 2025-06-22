@@ -1,0 +1,26 @@
+{
+  "name": "product-filtering-system",
+  "version": "1.0.0",
+  "description": "A console-based product search tool using OpenAI function calling capabilities",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "openai",
+    "function-calling",
+    "product-search",
+    "filtering",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "openai": "^4.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+} 
